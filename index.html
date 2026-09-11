@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier Goods | Objects for everyday life</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <button class="menu-button" type="button" id="menu-button" aria-expanded="false" aria-controls="menu-links">
+            <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+            Menu
+        </button>
+         <a class="brand" href="#">Atelier<span>.</span></a>
+        <nav aria-label="Main navigation">
+            <ul id="menu-links" hidden>
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="bag-link" href="#">Bag <span>(0)</span></a>
+    </header>
+
+    <main>
+        <section class="hero" id="about">
+            <div class="hero-copy">
+                <p class="eyebrow">Thoughtful objects / 2024</p>
+                <h1>Less, but<br><em>better.</em></h1>
+                <p class="hero-text">Everyday pieces with a quiet point of view. Designed to be used, loved, and kept around.</p>
+                <a class="button-link" href="#products">Explore the collection <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-image" role="img" aria-label="A sculptural ceramic vase on a sunny table"></div>
+            <div class="hero-stamp">EST.<br><strong>2018</strong></div>
+        </section>
+
+        <section class="collection" id="products">
+            <div class="section-heading">
+                <p class="eyebrow">Curated for you</p>
+                <h2>Small things,<br><em>well made.</em></h2>
+                <a href="#" class="text-link">View all products <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-image product-image--one"></div>
+                    <div class="product-info"><h3>Ripple Vase</h3><p>$48.00</p></div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image product-image--two"></div>
+                    <div class="product-info"><h3>Folded Linen</h3><p>$32.00</p></div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image product-image--three"></div>
+                    <div class="product-info"><h3>Daily Tumbler</h3><p>$24.00</p></div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact"><p>Made for the everyday.</p><a href="mailto:hello@atelier.example">hello@atelier.example</a></footer>
+</body>
+</html>

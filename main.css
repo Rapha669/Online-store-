@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap");
+
+:root {
+    --ink: #1d2421;
+    --muted: #737a72;
+    --paper: #f4f2ed;
+    --line: #d8d8d0;
+    --accent: #cf6446;
+    --sage: #c7d1c0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: var(--ink);
+    background: var(--paper);
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-header {
+    align-items: center;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr auto 1fr;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 1.5rem 4vw;
+}
+
+.brand {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -.04em;
+}
+
+.brand span {
+    color: var(--accent);
+}
+
+.bag-link {
+    justify-self: end;
+    font-size: .8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bag-link span {
+    color: var(--muted);
+    font-weight: 400;
+}
+
+.menu-button {
+    align-items: center;
+    background: transparent;
+    border: 1px solid var(--ink);
+    border-radius: 999px;
+    color: var(--ink);
+    cursor: pointer;
+    display: flex;
+    font: inherit;
+    font-size: .78rem;
+    gap: .6rem;
+    padding: .65rem 1rem;
+    text-transform: uppercase;
+}
+
+.menu-button:hover {
+    background: var(--ink);
+    color: var(--paper);
+}
+
+.menu-icon {
+    display: grid;
+    gap: 3px;
+}
+
+.menu-icon i {
+    background: currentColor;
+    display: block;
+    height: 1px;
+    width: 13px;
+}
+
+nav {
+    left: 4vw;
+    position: absolute;
+    top: 5rem;
+    z-index: 2;
+}
+
+nav ul {
+    background: var(--ink);
+    color: var(--paper);
+    list-style: none;
+    margin: 0;
+    padding: .7rem 1.2rem;
+}
+
+nav li {
+    padding: .45rem 0;
+}
+
+nav a {
+    font-size: .9rem;
+}
+
+nav a:hover {
+    color: #f2a183;
+}
+
+.hero {
+    align-items: center;
+    display: grid;
+    grid-template-columns: minmax(280px, .85fr) minmax(360px, 1.15fr);
+    margin: 2rem auto 0;
+    max-width: 1280px;
+    min-height: 620px;
+    padding: 0 4vw;
+    position: relative;
+}
+
+.hero-copy {
+    max-width: 470px;
+    padding: 3rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.eyebrow {
+    color: var(--accent);
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .13em;
+    margin: 0 0 1.5rem;
+    text-transform: uppercase;
+}
+
+h1,
+h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    letter-spacing: -.055em;
+    line-height: .93;
+    margin: 0;
+}
+
+h1 {
+    font-size: clamp(4.5rem, 9vw, 8.8rem);
+}
+
+h1 em,
+h2 em {
+    color: var(--accent);
+    font-style: italic;
+}
+
+.hero-text {
+    color: var(--muted);
+    line-height: 1.7;
+    margin: 2rem 0;
+    max-width: 330px;
+}
+
+.button-link {
+    align-items: center;
+  
+    display: inline-flex;
+    font-size: .8rem;
+    font-weight: 700;
+    gap: 1.2rem;
+    padding-bottom: .7rem;
+    text-transform: uppercase;
+}
+
+.button-link span {
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+
+.hero-image {
+    background-color: var(--sage);
+    background-image: linear-gradient(120deg, transparent 0 25%, rgba(255, 255, 255, .2) 26% 28%, transparent 29%), url("https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=1200&q=85");
+    background-position: center;
+    background-size: cover;
+    height: 590px;
+}
+
+.hero-stamp {
+    border: 1px solid var(--ink);
+    bottom: 5rem;
+    font-size: .6rem;
+    left: 47%;
+    letter-spacing: .1em;
+    padding: .8rem;
+    position: absolute;
+    text-align: center;
+    transform: rotate(-10deg);
+}
+
+.hero-stamp strong {
+    font-size: .8rem;
+}
+
+.collection {
+    margin: 8rem auto 0;
+    max-width: 1280px;
+    padding: 0 4vw 8rem;
+}
+
+.section-heading {
+    align-items: end;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: clamp(3rem, 5vw, 5rem);
+}
+
+.text-link {
+    border-bottom: 1px solid var(--ink);
+    font-size: .75rem;
+    font-weight: 700;
+    padding-bottom: .5rem;
+    text-transform: uppercase;
+}
+
+.text-link span {
+    color: var(--accent);
+    margin-left: 1rem;
+}
+
+.product-grid {
+    display: grid;
+    gap: 1.4rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.product-image {
+    aspect-ratio: 1 / 1.12;
+    background-position: center;
+    background-size: cover;
+}
+
+.product-image--one {
+    background-color: #d9d0c2;
+    background-image: url("https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=700&q=80");
+}
+
+.product-image--two {
+    background-color: var(--sage);
+    background-image: url("https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=80");
+}
+
+.product-image--three {
+    background-color: #ddc0a5;
+    background-image: url("https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=700&q=80");
+}
+
+.product-info {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.product-info h3,
+.product-info p {
+    font-size: .85rem;
+    margin: 0;
+}
+
+.product-info p {
+    color: var(--muted);
+}
+
+footer {
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4vw;
+    padding: 1.5rem 0 2rem;
+}
+
+footer p,
+footer a {
+    font-size: .75rem;
+    margin: 0;
+}
+
+footer a {
+    color: var(--accent);
+}
+
+@media (max-width: 700px) {
+    .site-header {
+        gap: 1rem;
+        grid-template-columns: 1fr auto auto;
+        padding: 1.2rem 1.25rem;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 1rem;
+        padding: 0 1.25rem;
+    }
+
+    .hero-copy {
+        padding: 3.5rem 0 3rem;
+    }
+
+    .hero-image {
+        height: 380px;
+    }
+
+    .hero-stamp {
+        bottom: 2rem;
+        left: auto;
+        right: 2rem;
+    }
+
+    nav {
+        left: 1.25rem;
+        top: 4.4rem;
+    }
+
+    .collection {
+        margin-top: 5rem;
+        padding: 0 1.25rem 5rem;
+    }
+
+    .section-heading {
+        align-items: start;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        aspect-ratio: 1.2 / 1;
+    }
+
+    footer {
+        margin: 0 1.25rem;
+    }
+}
